@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: quizforge-backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: PROJECT_NAME
+        value: QuizForge AI
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 120
+      - key: CORS_ORIGINS
+        value: "*"
