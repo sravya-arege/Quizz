@@ -175,6 +175,6 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-Developed by **Kapil Varun Babu**
+Developed by **Sravya Arege**
 
 GitHub: https://github.com/sravya-arege
